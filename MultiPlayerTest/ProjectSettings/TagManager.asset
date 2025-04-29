@@ -4,77 +4,63 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - MainLight
   - CinemachineTarget
-  - ScreenCamera
-  - cockpit_capitalLaser
+  - Item
+  - Demon
+  - Baby
+  - Sunak
+  - Enemy
+  - FlickableObject
+  - UIItem
+  - SunakPoint
+  - HorrorItem
+  - Bullet
+  - Character
+  - Wall
+  - Student
+  - Shop
+  - PW - Nature
+  - Animal
+  - Water
+  - Fly
+  - Climb
+  - Stair
+  - WallRun
+  - House
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Temp_Post
+  - 
   - Water
   - UI
-  - Terminal
-  - Location
-  - LookInteractor
-  - Screen
-  - Occluder
-  - Camera
-  - MainCameraOnly
-  - Oasis_TerrainBake
+  - 
+  - 
+  - Character
+  - Ground
+  - Demon
+  - Hologram
+  - 
+  - 
+  - 
+  - BodyPart
   - 
   - 
   - 
   - 
+  - Animal
   - 
   - 
-  - Cockpit
-  - Cockpit_3DSkybox
-  - Cockpit_3DSkybox_BG
-  - Cockpit_Ally
-  - Cockpit_Invader
-  - Cockpit_BG
-  - Cockpit_DepthClear
+  - Enemy
+  - Building
+  - Terrain
   - 
   - 
-  - 
-  - 
-  - 
+  - ForMap
+  - ColliderCheck
+  - Item
+  - InShop
   m_SortingLayers:
   - name: Default
     uniqueID: 0
     locked: 0
-  m_RenderingLayers:
-  - Default
-  - Screen
-  - Lamps
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 

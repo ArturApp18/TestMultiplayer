@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cb0b119fa410f31478418cfe346c8db9
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279510
+  packageName: Simulation Game Creator - Create your Simulator!
+  packageVersion: 2.0
+  assetPath: Assets/SimulationGameCreator/Tasks/Read a Note.asset
+  uploadId: 709684

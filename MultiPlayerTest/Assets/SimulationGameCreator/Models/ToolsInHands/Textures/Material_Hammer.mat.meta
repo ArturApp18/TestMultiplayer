@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ae9c0ec2b3f109b43b705485e7fc8c67
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279510
+  packageName: Simulation Game Creator - Create your Simulator!
+  packageVersion: 2.0
+  assetPath: Assets/SimulationGameCreator/Models/ToolsInHands/Textures/Material_Hammer.mat
+  uploadId: 709684

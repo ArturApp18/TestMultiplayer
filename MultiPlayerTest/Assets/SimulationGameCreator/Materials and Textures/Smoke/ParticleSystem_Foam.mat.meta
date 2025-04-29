@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d282b88c9d5454cd0af042a9b6155a03
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279510
+  packageName: Simulation Game Creator - Create your Simulator!
+  packageVersion: 2.0
+  assetPath: Assets/SimulationGameCreator/Materials and Textures/Smoke/ParticleSystem_Foam.mat
+  uploadId: 709684

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a1543d8bb1b2cb741b8c1bced60b99c6
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279510
+  packageName: Simulation Game Creator - Create your Simulator!
+  packageVersion: 2.0
+  assetPath: Assets/SimulationGameCreator/Materials and Textures/Grass/NewLayer.terrainlayer
+  uploadId: 709684

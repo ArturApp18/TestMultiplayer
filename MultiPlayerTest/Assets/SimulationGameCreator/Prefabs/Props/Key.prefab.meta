@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6783d9189a9d24b478cf45b041849cfc
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279510
+  packageName: Simulation Game Creator - Create your Simulator!
+  packageVersion: 2.0
+  assetPath: Assets/SimulationGameCreator/Prefabs/Props/Key.prefab
+  uploadId: 709684
