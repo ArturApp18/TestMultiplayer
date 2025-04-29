@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 1088a533affeb5e48971abf7fcc1d038
+timeCreated: 1437295312
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279510
+  packageName: Simulation Game Creator - Create your Simulator!
+  packageVersion: 2.0
+  assetPath: Assets/SimulationGameCreator/Scripts/VirtualAxis.cs
+  uploadId: 709684

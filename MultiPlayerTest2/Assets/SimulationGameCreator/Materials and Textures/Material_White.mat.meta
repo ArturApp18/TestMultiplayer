@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3041167739fce46adbca28632623877a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279510
+  packageName: Simulation Game Creator - Create your Simulator!
+  packageVersion: 2.0
+  assetPath: Assets/SimulationGameCreator/Materials and Textures/Material_White.mat
+  uploadId: 709684

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e4e8b74a85a740c4c92315ea206fd779
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279510
+  packageName: Simulation Game Creator - Create your Simulator!
+  packageVersion: 2.0
+  assetPath: Assets/SimulationGameCreator/Animations/Tool_Animations/Use_Broom.anim
+  uploadId: 709684

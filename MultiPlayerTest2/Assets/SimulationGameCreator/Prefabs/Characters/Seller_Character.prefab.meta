@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 859cdab6cde927c4491a78b8a430eff9
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279510
+  packageName: Simulation Game Creator - Create your Simulator!
+  packageVersion: 2.0
+  assetPath: Assets/SimulationGameCreator/Prefabs/Characters/Seller_Character.prefab
+  uploadId: 709684
