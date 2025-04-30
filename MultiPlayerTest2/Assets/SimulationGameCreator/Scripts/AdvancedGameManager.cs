@@ -1,10 +1,13 @@
 using System.Collections;
+using Photon.Pun;
 using UnityEngine;
 
 namespace SimulationGameCreator
 {
     public class AdvancedGameManager : MonoBehaviour
     {
+        [SerializeField] private FirstPersonController _firstPersonController;
+        [SerializeField] private PhotonView _photonView;
         public GameObject CameraMain;
         public static AdvancedGameManager Instance;
         public PlayerValues playerValues;
@@ -15,8 +18,7 @@ namespace SimulationGameCreator
         public float HungerSpeed = 1;
         public float ThirstSpeed = 2;
 
-        [HideInInspector]
-        public Mode CurrentMode = Mode.Free;
+        [HideInInspector] public Mode CurrentMode = Mode.Free;
 
         public int StartingMoneyAmount = 1000;
         public int StartingExpAmount = 1;
@@ -57,26 +59,29 @@ namespace SimulationGameCreator
             PlayerPrefs.Save();
             GameCanvas.Instance.UpdateStatus();
             AudioManager.Instance.Play_audioClip_Coin();
-            GameCanvas.Instance.Show_SpendGet(price*-1);
+            GameCanvas.Instance.Show_SpendGet(price * -1);
         }
 
         void Start()
         {
-            GameCanvas.Instance.Crosshair.SetActive(true);
-            if(controllerType == ControllerType.Mobile)
+            if (_photonView.IsMine)
             {
-                Cursor.lockState = CursorLockMode.Confined;
-                Cursor.visible = true;
+                GameCanvas.Instance.Crosshair.SetActive(true);
+                if (controllerType == ControllerType.Mobile)
+                {
+                    Cursor.lockState = CursorLockMode.Confined;
+                    Cursor.visible = true;
+                }
+                else
+                {
+                    Cursor.lockState = CursorLockMode.Locked;
+                    Cursor.visible = false;
+                }
+
+                DailyStart();
+                InventoryManager.Instance.LoadBuiltObjects();
+                Application.targetFrameRate = 60;
             }
-            else
-            {
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
-            }
-            
-            DailyStart();
-            InventoryManager.Instance.LoadBuiltObjects();
-            Application.targetFrameRate = 60;
         }
 
 
@@ -85,7 +90,7 @@ namespace SimulationGameCreator
             CameraMain.SetActive(true);
             GameCanvas.Instance.image_Blinking.gameObject.SetActive(true);
             GameCanvas.Instance.image_Blinking.GetComponent<Animation>().Play();
-            FirstPersonController.Instance.enabled = true;
+            _firstPersonController.enabled = true;
             CameraScript.Instance.enabled = true;
         }
 

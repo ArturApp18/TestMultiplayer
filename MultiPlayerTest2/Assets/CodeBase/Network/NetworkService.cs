@@ -1,6 +1,9 @@
 using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine;
+using System.Collections;
+using SimulationGameCreator;
+using UnityEngine.SceneManagement;
 
 namespace CodeBase.Network
 {
@@ -13,11 +16,12 @@ namespace CodeBase.Network
 
         private void Start()
         {
+            PhotonNetwork.AutomaticallySyncScene = true;
             _canvasGroup.alpha = 0;
             _canvasGroup.interactable = false;
-            // Устанавливаем уникальное имя клиента
             PhotonNetwork.NickName = "Player_" + Random.Range(1000, 9999);
             PhotonNetwork.ConnectUsingSettings();
+            DontDestroyOnLoad(this);
         }
 
         public override void OnConnectedToMaster()
@@ -58,8 +62,44 @@ namespace CodeBase.Network
         public override void OnJoinedRoom()
         {
             Debug.Log($"Joined room: {PhotonNetwork.CurrentRoom.Name}, Player: {PhotonNetwork.NickName}");
-            Vector3 spawnPos = new Vector3(Random.Range(-10f, 10f), 1f, Random.Range(-10f, 10f));
-            PhotonNetwork.Instantiate("PlayerPrefab", spawnPos, Quaternion.identity);
+            if (PhotonNetwork.IsMasterClient)
+            {
+                PhotonNetwork.LoadLevel("GamePlay");
+            }
+
+            StartCoroutine(WaitForSceneAndSpawn());
+        }
+
+        private IEnumerator WaitForSceneAndSpawn()
+        {
+            while (SceneManager.GetActiveScene().name != "GamePlay")
+            {
+                yield return null;
+            }
+
+            yield return new WaitForSeconds(0.5f);
+
+            Debug.Log("Spawning player...");
+            Vector3 spawnPos = new Vector3(-76.175f, 12.382f, -90.42f);
+            GameObject player = PhotonNetwork.Instantiate("SimulationFPSPlayer", spawnPos, Quaternion.identity);
+            PhotonView playerView = player.GetComponent<PhotonView>();
+            if (playerView.IsMine)
+            {
+                AdvancedGameManager gameManager = player.GetComponentInChildren<AdvancedGameManager>();
+                MeshRenderer meshRenderer = player.GetComponentInChildren<MeshRenderer>();
+                meshRenderer.material.color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
+
+                if (player == null)
+                {
+                    Debug.LogError(
+                        "Failed to instantiate player prefab. Ensure 'SimulationFPSPlayer' is in Resources folder and has PhotonView.");
+                }
+                else
+                {
+                    Debug.Log("Player spawned successfully.");
+                    gameManager.enabled = true;
+                }
+            }
         }
 
         public override void OnCreateRoomFailed(short returnCode, string message)

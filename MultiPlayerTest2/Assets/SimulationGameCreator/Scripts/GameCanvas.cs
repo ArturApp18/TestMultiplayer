@@ -8,6 +8,7 @@ namespace SimulationGameCreator
 {
     public class GameCanvas : MonoBehaviour
     {
+        [SerializeField] private FirstPersonController _firstPersonController;
         public static GameCanvas Instance;
         public Image image_Blinking;
         public Image Button_Build;
@@ -102,7 +103,7 @@ namespace SimulationGameCreator
         {
             Panel_Inventory.SetActive(true);
             AdvancedGameManager.Instance.CurrentMode = Mode.InSellerList;
-            FirstPersonController.Instance.enabled = false;
+            _firstPersonController.enabled = false;
             InventoryManager.Instance.LoadAllObjects();
             isPaused = true;
             if (AdvancedGameManager.Instance.controllerType == ControllerType.PC)
@@ -116,7 +117,7 @@ namespace SimulationGameCreator
         {
             Panel_Inventory.SetActive(false);
             AdvancedGameManager.Instance.CurrentMode = Mode.Free;
-            FirstPersonController.Instance.enabled = true;
+            _firstPersonController.enabled = true;
             HeroPlayerScript.Instance.ActivatePlayer();
             CameraScript.Instance.enabled = true;
             isPaused = false;
