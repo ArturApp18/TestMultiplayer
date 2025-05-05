@@ -10,6 +10,7 @@ namespace CodeBase.Network
         [SerializeField] private string _roomName = "TestRoom";
         [SerializeField] private byte _maxPlayers = 4;
         [SerializeField] private CanvasGroup _canvasGroup;
+        [SerializeField] private CoinSpawner _coinSpawner;
         private bool _isConnectedToMaster;
 
         private void Start()
@@ -70,6 +71,11 @@ namespace CodeBase.Network
                     Vector3 itemPos = new Vector3(Random.Range(-10f, 10f), 1f, Random.Range(-10f, 10f));
                     PhotonNetwork.Instantiate("PickupItem", itemPos, Quaternion.identity);
                 }
+            }
+            
+            if (PhotonNetwork.IsMasterClient)
+            {
+                _coinSpawner.SpawnCoins();
             }
         }
 
