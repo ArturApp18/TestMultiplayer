@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c8d07cf98ed6be9489dce9e0a8f2cafe
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279510
+  packageName: Simulation Game Creator - Create your Simulator!
+  packageVersion: 2.0
+  assetPath: Assets/SimulationGameCreator/Materials and Textures/Ground/WoodMaterial2.mat
+  uploadId: 709684

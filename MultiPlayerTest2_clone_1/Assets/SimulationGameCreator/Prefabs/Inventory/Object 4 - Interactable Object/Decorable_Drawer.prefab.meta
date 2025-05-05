@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5a8ce5724690046e5b34a7ec4e3c6fa5
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279510
+  packageName: Simulation Game Creator - Create your Simulator!
+  packageVersion: 2.0
+  assetPath: Assets/SimulationGameCreator/Prefabs/Inventory/Object 4 - Interactable
+    Object/Decorable_Drawer.prefab
+  uploadId: 709684

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: fddf5a43388446047a51718ba253dcc9
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279510
+  packageName: Simulation Game Creator - Create your Simulator!
+  packageVersion: 2.0
+  assetPath: Assets/SimulationGameCreator/Prefabs/Buildings/Building_Sample7.prefab
+  uploadId: 709684

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6abbd1d1fddfd48e3a14064949fbe781
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279510
+  packageName: Simulation Game Creator - Create your Simulator!
+  packageVersion: 2.0
+  assetPath: Assets/SimulationGameCreator/Animations/DrawerClose.anim
+  uploadId: 709684

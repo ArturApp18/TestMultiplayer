@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8e2457ab65a91e945b64a401a9c42ea4
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279510
+  packageName: Simulation Game Creator - Create your Simulator!
+  packageVersion: 2.0
+  assetPath: Assets/SimulationGameCreator/Animations/MoveObject2.anim
+  uploadId: 709684

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 49f6af4bbe386914393d23ee54c35ef0
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279510
+  packageName: Simulation Game Creator - Create your Simulator!
+  packageVersion: 2.0
+  assetPath: Assets/SimulationGameCreator/Models/Flower/Material_Flower.mat
+  uploadId: 709684

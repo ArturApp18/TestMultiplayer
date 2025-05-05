@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e4cc9210879c63546853badfda5f4a99
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279510
+  packageName: Simulation Game Creator - Create your Simulator!
+  packageVersion: 2.0
+  assetPath: Assets/SimulationGameCreator/Models/ModularBuilding/Textures and Materials/Material_Ground_House.mat
+  uploadId: 709684

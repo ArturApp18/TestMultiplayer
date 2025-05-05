@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 0f006b55c8ce32d4384fd3a4fe3e8261
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279510
+  packageName: Simulation Game Creator - Create your Simulator!
+  packageVersion: 2.0
+  assetPath: Assets/SimulationGameCreator/Prefabs/Inventory/Inventory_Item_FoodDrink.prefab
+  uploadId: 709684

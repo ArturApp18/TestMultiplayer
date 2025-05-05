@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d886670c65eb7408da6e932c3d2f4598
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279510
+  packageName: Simulation Game Creator - Create your Simulator!
+  packageVersion: 2.0
+  assetPath: Assets/SimulationGameCreator/Prefabs/Particle/Smoke.prefab
+  uploadId: 709684

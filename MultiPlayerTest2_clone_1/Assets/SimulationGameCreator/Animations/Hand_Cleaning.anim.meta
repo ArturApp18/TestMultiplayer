@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9bc18e366b47d484b8d4c157a96f9419
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279510
+  packageName: Simulation Game Creator - Create your Simulator!
+  packageVersion: 2.0
+  assetPath: Assets/SimulationGameCreator/Animations/Hand_Cleaning.anim
+  uploadId: 709684

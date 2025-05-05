@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8a59128d3eab30e4e877aa6507aad22f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279510
+  packageName: Simulation Game Creator - Create your Simulator!
+  packageVersion: 2.0
+  assetPath: Assets/SimulationGameCreator/Materials and Textures/Table/Material_Table.mat
+  uploadId: 709684

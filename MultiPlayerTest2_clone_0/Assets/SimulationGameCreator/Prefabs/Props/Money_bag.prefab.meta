@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 390a70e14f059af4ea3bcdc247195864
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279510
+  packageName: Simulation Game Creator - Create your Simulator!
+  packageVersion: 2.0
+  assetPath: Assets/SimulationGameCreator/Prefabs/Props/Money_bag.prefab
+  uploadId: 709684

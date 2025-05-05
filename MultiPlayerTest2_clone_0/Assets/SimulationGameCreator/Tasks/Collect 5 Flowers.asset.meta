@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0734cfffadf214a36b27f77c07dd6b44
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279510
+  packageName: Simulation Game Creator - Create your Simulator!
+  packageVersion: 2.0
+  assetPath: Assets/SimulationGameCreator/Tasks/Collect 5 Flowers.asset
+  uploadId: 709684

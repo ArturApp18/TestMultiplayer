@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4a7c69c2826b09146a97b5ae6c5f192b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279510
+  packageName: Simulation Game Creator - Create your Simulator!
+  packageVersion: 2.0
+  assetPath: Assets/SimulationGameCreator/Models/ModularBuilding/Textures and Materials/11
+    - Default 5.mat
+  uploadId: 709684

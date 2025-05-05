@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 60ca1117a324e4715851784095e7fb3a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279510
+  packageName: Simulation Game Creator - Create your Simulator!
+  packageVersion: 2.0
+  assetPath: Assets/SimulationGameCreator/Models/Rock/Material_Rock.mat
+  uploadId: 709684

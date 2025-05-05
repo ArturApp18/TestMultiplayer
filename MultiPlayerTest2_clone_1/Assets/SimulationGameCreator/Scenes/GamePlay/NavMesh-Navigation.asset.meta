@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 12ccd282d6404f543bb7f1b0dce0d75d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 23800000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279510
+  packageName: Simulation Game Creator - Create your Simulator!
+  packageVersion: 2.0
+  assetPath: Assets/SimulationGameCreator/Scenes/GamePlay/NavMesh-Navigation.asset
+  uploadId: 709684
