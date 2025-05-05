@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using Photon.Pun;
 using UnityEngine;
 
 namespace SimulationGameCreator
@@ -7,7 +6,7 @@ namespace SimulationGameCreator
     [RequireComponent(typeof(CharacterController))]
     public class FirstPersonController : MonoBehaviour
     {
-        [SerializeField] private PhotonView _photonView;
+        public static FirstPersonController Instance;
         public float MoveSpeed = 4.0f;
         public float SprintSpeed = 6.0f;
         public float RotationSpeed = 1.0f;
@@ -30,34 +29,22 @@ namespace SimulationGameCreator
         private bool canJump = true;
 
         public Animation animation_Hand;
-        
+
+        private void Awake()
+        {
+            Instance = this;
+        }
 
         private void Start()
         {
             _controller = GetComponent<CharacterController>();
-            if (_photonView)
-            {
-                print("НАШЕЛ PHOTON VIEW");
-            }
-            else
-            {
-                print("NO PHOTON VIEW");
-            }
-            
         }
 
         private void Update()
         {
-            if (_photonView.IsMine)
-            {
-                JumpAndGravity();
-                GroundedCheck();
-                Move();
-            }
-            else
-            {
-                print("НЕ МОЙ PHOTON VIEW");
-            }
+            JumpAndGravity();
+            GroundedCheck();
+            Move();
         }
 
         public void Jump()
@@ -84,8 +71,7 @@ namespace SimulationGameCreator
                 {
                     animation_Hand.Play();
                 }
-
-                if (isRunning)
+                if (FirstPersonController.Instance.isRunning)
                 {
                     WalkSoundPeriod = UnityEngine.Random.Range(0.25f, 0.5f);
                 }
@@ -114,22 +100,18 @@ namespace SimulationGameCreator
 
         private void RotationUpdate()
         {
-            transform.eulerAngles = new Vector3(transform.eulerAngles.x, Camera.transform.eulerAngles.y,
-                transform.eulerAngles.z);
+            transform.eulerAngles = new Vector3(transform.eulerAngles.x, Camera.transform.eulerAngles.y, transform.eulerAngles.z);
         }
 
 
         private void GroundedCheck()
         {
-            Vector3 spherePosition = new Vector3(transform.position.x, transform.position.y - GroundedOffset,
-                transform.position.z);
-            Grounded = Physics.CheckSphere(spherePosition, GroundedRadius, GroundLayers,
-                QueryTriggerInteraction.Ignore);
+            Vector3 spherePosition = new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z);
+            Grounded = Physics.CheckSphere(spherePosition, GroundedRadius, GroundLayers, QueryTriggerInteraction.Ignore);
         }
 
         private Vector2 _input;
         private float lastStaminaSpendTime = 0;
-
         private void Move()
         {
             float targetSpeed = MoveSpeed;
@@ -141,7 +123,6 @@ namespace SimulationGameCreator
             {
                 _input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
             }
-
             if (_input == Vector2.zero) targetSpeed = 0.0f;
 
             if (AdvancedGameManager.Instance.controllerType == ControllerType.Mobile)
@@ -157,7 +138,6 @@ namespace SimulationGameCreator
                                 targetSpeed = SprintSpeed;
                             }
                         }
-
                         isRunning = true;
                         if (Time.time > lastStaminaSpendTime + 0.05f)
                         {
@@ -165,6 +145,7 @@ namespace SimulationGameCreator
                             HeroPlayerScript.Instance.Stamina = HeroPlayerScript.Instance.Stamina - 1;
                             GameCanvas.Instance.UpdateStamina();
                         }
+
                     }
                     else
                     {
@@ -174,6 +155,7 @@ namespace SimulationGameCreator
                             AudioManager.Instance.Play_Audio_Breathing();
                         }
                     }
+
                 }
             }
             else
@@ -189,7 +171,6 @@ namespace SimulationGameCreator
                                 targetSpeed = SprintSpeed;
                             }
                         }
-
                         isRunning = true;
                         if (Time.time > lastStaminaSpendTime + 0.1f)
                         {
@@ -197,6 +178,7 @@ namespace SimulationGameCreator
                             HeroPlayerScript.Instance.Stamina = HeroPlayerScript.Instance.Stamina - 1;
                             GameCanvas.Instance.UpdateStamina();
                         }
+
                     }
                     else
                     {
@@ -206,14 +188,13 @@ namespace SimulationGameCreator
                             AudioManager.Instance.Play_Audio_Breathing();
                         }
                     }
-                }
 
+                }
                 if (Input.GetKeyUp(KeyCode.LeftShift))
                 {
                     isRunning = false;
                 }
             }
-
             _speed = Mathf.Lerp(_speed, targetSpeed, Time.deltaTime * SpeedChangeRate);
             _speed = Mathf.Round(_speed * 1000f) / 1000f;
 
@@ -222,6 +203,7 @@ namespace SimulationGameCreator
             {
                 inputDirection = transform.right * _input.x + transform.forward * _input.y;
                 Play_Player_Walk();
+
             }
             else
             {
@@ -230,11 +212,8 @@ namespace SimulationGameCreator
                     animation_Hand.Stop();
                 }
             }
-
-            _controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) +
-                             new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
+            _controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
         }
-
         private bool isRunning = false;
 
         private void JumpAndGravity()
@@ -246,7 +225,7 @@ namespace SimulationGameCreator
                     Jump();
                 }
             }
-
+           
             if (Grounded)
             {
                 if (_verticalVelocity < 0.0f)
@@ -276,9 +255,7 @@ namespace SimulationGameCreator
             if (Grounded) Gizmos.color = transparentGreen;
             else Gizmos.color = transparentRed;
 
-            Gizmos.DrawSphere(
-                new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z),
-                GroundedRadius);
+            Gizmos.DrawSphere(new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z), GroundedRadius);
         }
     }
 }
