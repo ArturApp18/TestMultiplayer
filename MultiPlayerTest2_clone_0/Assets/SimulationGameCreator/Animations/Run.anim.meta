@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d7f6003590ee24506b31d4730bc6b07e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279510
+  packageName: Simulation Game Creator - Create your Simulator!
+  packageVersion: 2.0
+  assetPath: Assets/SimulationGameCreator/Animations/Run.anim
+  uploadId: 709684

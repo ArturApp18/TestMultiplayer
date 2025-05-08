@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8cc9bed73176c1b4f9d8ef847121f75a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279510
+  packageName: Simulation Game Creator - Create your Simulator!
+  packageVersion: 2.0
+  assetPath: Assets/SimulationGameCreator/Prefabs/Props/PlasticBarrelTrash.prefab
+  uploadId: 709684

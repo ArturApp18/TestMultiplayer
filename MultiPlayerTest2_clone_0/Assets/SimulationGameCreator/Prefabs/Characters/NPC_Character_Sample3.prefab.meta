@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 35a6489ecd7ba8c43835d7c95f693524
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279510
+  packageName: Simulation Game Creator - Create your Simulator!
+  packageVersion: 2.0
+  assetPath: Assets/SimulationGameCreator/Prefabs/Characters/NPC_Character_Sample3.prefab
+  uploadId: 709684

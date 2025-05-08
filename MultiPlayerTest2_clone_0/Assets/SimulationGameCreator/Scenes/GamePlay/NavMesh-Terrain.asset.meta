@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 38cbdf76012af5943835b1ad89aef69c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 23800000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279510
+  packageName: Simulation Game Creator - Create your Simulator!
+  packageVersion: 2.0
+  assetPath: Assets/SimulationGameCreator/Scenes/GamePlay/NavMesh-Terrain.asset
+  uploadId: 709684

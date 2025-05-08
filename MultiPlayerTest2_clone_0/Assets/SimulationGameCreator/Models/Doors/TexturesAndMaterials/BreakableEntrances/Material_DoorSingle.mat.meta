@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6f30357e7c882ef47832ff8d77c9e393
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 279510
+  packageName: Simulation Game Creator - Create your Simulator!
+  packageVersion: 2.0
+  assetPath: Assets/SimulationGameCreator/Models/Doors/TexturesAndMaterials/BreakableEntrances/Material_DoorSingle.mat
+  uploadId: 709684
